@@ -1,0 +1,16 @@
+.home-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-page .section {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+@media (max-width: 768px) {
+  .home-page .section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}

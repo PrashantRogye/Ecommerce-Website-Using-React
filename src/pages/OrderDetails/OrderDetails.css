@@ -1,0 +1,141 @@
+
+.order-back-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.order-details-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.order-details-heading span {
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.order-details-heading h1 {
+  margin: 8px 0;
+  font-size: clamp(24px, 4vw, 34px);
+}
+
+.order-detail-status {
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: #e8f7ef;
+  color: #16834b;
+  font-size: var(--font-sm);
+}
+
+.order-details-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 25px;
+  align-items: start;
+}
+
+.order-details-main {
+  display: grid;
+  gap: 20px;
+}
+
+.order-detail-card {
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.order-detail-card h2 {
+  margin: 0 0 20px;
+  font-size: var(--font-lg);
+}
+
+.ordered-product {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ordered-product:last-child {
+  border-bottom: 0;
+}
+
+.ordered-product img {
+  width: 75px;
+  height: 75px;
+  padding: 7px;
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  object-fit: contain;
+}
+
+.ordered-product > div {
+  display: grid;
+  flex: 1;
+  gap: 5px;
+  min-width: 0;
+}
+
+.ordered-product span,
+.ordered-product small {
+  color: var(--color-secondary);
+  font-size: var(--font-xs);
+}
+
+.ordered-product > strong {
+  font-size: var(--font-sm);
+  white-space: nowrap;
+}
+
+.order-address p {
+  color: var(--color-secondary);
+  font-size: var(--font-sm);
+  line-height: 1.6;
+}
+
+.order-price-summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 16px 0;
+  font-size: var(--font-sm);
+}
+
+.order-final-total {
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  font-weight: 700;
+}
+
+.order-price-summary > p {
+  color: var(--color-secondary);
+  font-size: var(--font-xs);
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .order-details-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-detail-card {
+    padding: 16px;
+  }
+
+  .ordered-product {
+    flex-wrap: wrap;
+  }
+}
+

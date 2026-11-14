@@ -1,0 +1,23 @@
+.announcement-bar {
+  width: 100%;
+  background: var(--color-primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 9px 15px;
+  font-size: var(--font-xs);
+}
+
+.announcement-bar p {
+  margin: 0;
+}
+
+.announcement-bar a {
+  color: #ffffff;
+  font-weight: var(--font-semibold);
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.announcement-bar a:hover {
+  color: var(--color-accent);
+}

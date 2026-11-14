@@ -1,0 +1,28 @@
+
+@media (max-width: 768px) {
+  :root {
+    --font-2xl: 26px;
+    --font-3xl: 32px;
+    --space-7: 32px;
+    --space-8: 40px;
+  }
+
+  .container {
+    width: min(100% - 28px, var(--container-width));
+  }
+
+  .section {
+    padding-block: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-xl: 20px;
+    --font-2xl: 24px;
+  }
+
+  .container {
+    width: min(100% - 24px, var(--container-width));
+  }
+}

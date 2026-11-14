@@ -1,0 +1,144 @@
+
+.orders-heading {
+  margin-bottom: 30px;
+}
+
+.orders-heading > span {
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.orders-heading h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.orders-heading p {
+  color: var(--color-secondary);
+}
+
+.orders-list {
+  display: grid;
+  gap: 18px;
+}
+
+.order-card {
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.order-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.order-card-header > div {
+  display: grid;
+  gap: 6px;
+}
+
+.order-card-header > div span {
+  color: var(--color-secondary);
+  font-size: var(--font-xs);
+}
+
+.order-card-header > div strong {
+  font-size: var(--font-sm);
+}
+
+.order-status {
+  padding: 7px 12px;
+  border-radius: var(--radius-full);
+  background: #e8f7ef;
+  color: #16834b;
+  font-size: var(--font-xs);
+  font-weight: 700;
+}
+
+.order-card-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 18px;
+}
+
+.order-product-preview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-product-preview img {
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  background: var(--color-background);
+  object-fit: contain;
+}
+
+.order-product-preview > span {
+  color: var(--color-secondary);
+  font-size: var(--font-xs);
+}
+
+.order-card-body p {
+  color: var(--color-secondary);
+  font-size: var(--font-sm);
+}
+
+.order-card-body > a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-sm);
+}
+
+.empty-orders {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.empty-orders > svg {
+  color: var(--color-accent);
+  font-size: 48px;
+}
+
+.empty-orders p {
+  color: var(--color-secondary);
+}
+
+.empty-orders a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .order-card-header {
+    justify-content: flex-start;
+  }
+
+  .order-card-header > div {
+    min-width: 40%;
+  }
+
+  .order-card-body {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

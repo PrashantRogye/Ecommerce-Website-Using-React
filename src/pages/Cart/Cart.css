@@ -1,0 +1,141 @@
+
+.cart-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.cart-heading span {
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.cart-heading h1 {
+  margin: 8px 0 0;
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.cart-heading > p {
+  color: var(--color-secondary);
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  align-items: start;
+  gap: 35px;
+}
+
+.cart-products {
+  min-width: 0;
+}
+
+.continue-link {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cart-summary {
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.cart-summary h2 {
+  margin: 0 0 22px;
+  font-size: var(--font-lg);
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 16px 0;
+  font-size: var(--font-sm);
+}
+
+.summary-row span {
+  color: var(--color-secondary);
+}
+
+.shipping-note {
+  color: var(--color-accent);
+  font-size: var(--font-xs);
+}
+
+.summary-total {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-base);
+  font-weight: 700;
+}
+
+.summary-total strong {
+  font-size: var(--font-lg);
+}
+
+.checkout-btn,
+.continue-shopping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secure-note {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: var(--font-xs);
+  margin: 15px 0 0;
+}
+
+.empty-cart {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.empty-cart > svg {
+  font-size: 45px;
+  color: var(--color-accent);
+}
+
+.empty-cart p {
+  color: var(--color-secondary);
+  margin-bottom: 25px;
+}
+
+.empty-cart .continue-shopping {
+  max-width: 220px;
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
